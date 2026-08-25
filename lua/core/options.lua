@@ -31,7 +31,7 @@ local options = {
     history = 50,              -- Remember 50 items in commandline history
     splitright = true,         -- Better buffer splitting
     splitbelow = true,
-    guifont = "CommitMono Nerd Font:h12.5",
+    guifont = "BlexMono Nerd Font:h12",
     -- mouse = "a",
     listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂",
 }
