@@ -35,26 +35,27 @@ return {
           "--no-errors-on-unmatched",
           "$FILENAME",
         },
-        taplo = {
-          command = "taplo",
-        -- stylua: ignore
-        args = {
-          "fmt",
-          "--option", "align_entries=true",
-          "--option", "align_comments=true",
-          "--option", "reorder_keys=true",
-          "--option", 'indent_string="  "',
-          "--option", "column_width=100",
-          "--option", "trailing_newline=true",
-          "--option", "array_auto_expand=true",
-          "--option", "array_auto_collapse=true",
-          "-"
-        },
-        },
         stdin = false,
         condition = function(ctx)
           return find_root_file({ "biome.json" }, ctx.filename)
         end,
+      },
+
+      taplo = {
+        command = "taplo",
+          -- stylua: ignore
+          args = {
+            "fmt",
+            "--option", "align_entries=true",
+            "--option", "align_comments=true",
+            "--option", "reorder_keys=true",
+            "--option", 'indent_string="  "',
+            "--option", "column_width=100",
+            "--option", "trailing_newline=true",
+            "--option", "array_auto_expand=true",
+            "--option", "array_auto_collapse=true",
+            "-"
+          },
       },
 
       prettierd = {
