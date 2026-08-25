@@ -5,6 +5,7 @@ return {
     cmd = "Snacks",
     lazy = false,
     opts = {
+      input = {},
       picker = {
         prompt = " ",
       },

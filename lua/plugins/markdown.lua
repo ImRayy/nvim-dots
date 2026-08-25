@@ -33,7 +33,7 @@ return {
 
   -- Obsidian 🤝 Neovim for writing and navigating obsidian vaults
   {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     version = "*",
     event = {
       "BufReadPre " .. vim.fn.expand("~") .. "/Documents/Notes/*.md",

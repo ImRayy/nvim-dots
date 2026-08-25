@@ -2,10 +2,18 @@ return {
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+    lazy = false,
     module = "nvim-treesitter",
-    version = false,
+    event = "VeryLazy",
+    cmd = {
+      "TSInstall",
+      "TSInstallFromGrammar",
+      "TSUninstall",
+      "TSUpdate",
+      "TSLog",
+    },
     build = ":TSUpdate",
-    event = { "VeryLazy" },
     dependencies = {
       "JoosepAlviste/nvim-ts-context-commentstring",
     },
@@ -21,7 +29,7 @@ return {
       },
     },
     config = function(_, opts)
-      require("nvim-treesitter.configs").setup(opts)
+      require("nvim-treesitter.config").setup(opts)
     end,
   },
 
@@ -35,7 +43,7 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
     event = "VeryLazy",
     config = function()
-      require("nvim-treesitter.configs").setup({
+      require("nvim-treesitter.config").setup({
         highlight = { enable = true },
         indent = { enable = true },
         textobjects = {

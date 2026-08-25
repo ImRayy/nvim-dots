@@ -23,7 +23,6 @@ return {
             "tailwindcss",
             "taplo",
             "vtsls",
-            "vtsls",
           },
           automatic_installation = false,
         },

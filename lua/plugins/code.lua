@@ -16,7 +16,7 @@ return {
 
   -- Color highlight
   {
-    "NvChad/nvim-colorizer.lua",
+    "catgoose/nvim-colorizer.lua",
     opts = {
       user_default_options = {
         css = true,
