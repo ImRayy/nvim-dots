@@ -35,6 +35,9 @@ return {
       { "<leader>lg", function() Snacks.lazygit.open() end },
       { "<leader>sp", function() Snacks.scratch.open() end },
 
+      -- Terminal
+      { "<leader>t", function () Snacks.terminal() end },
+
       -- Top Pickers & Explorer
       { "<leader><space>", function() Snacks.picker.smart() end },
       { "<leader>,", function() Snacks.picker.buffers() end },
