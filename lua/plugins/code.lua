@@ -17,13 +17,21 @@ return {
   -- Color highlight
   {
     "catgoose/nvim-colorizer.lua",
+    lazy = true,
+    event = "BufReadPre",
     opts = {
-      user_default_options = {
-        css = true,
-        mode = "virtualtext",
-        virtualtext = "",
-        virtualtext_inline = "before",
-        names = false,
+      user_commands = true,
+      lazy_load = false,
+      options = {
+        display = {
+          mode = "virtualtext",
+          virtualtext = {
+            char = "",
+            position = "before",
+            names = false,
+            css = true,
+          },
+        },
       },
       filetypes = {
         "*",
