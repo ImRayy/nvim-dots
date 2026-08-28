@@ -8,7 +8,7 @@ map("n", "<C-Q>", ":q!<CR>", { desc = "Quit neovim" })
 map("i", "<C-Backspace>", "<C-W>", { noremap = true, desc = "Delete a word" })
 
 -- Spell check
-map("n", "<leader>s", ":setlocal spell spelllang=en_us,programming<CR>", { desc = "Turn on spell check" })
+map("n", "<leader>s", ":setlocal spell spelllang=en_us<CR>", { desc = "Turn on spell check" })
 
 -- Session Manager
 map("n", "<C-s>", require("auto-session").search, { desc = "Project hop" })
