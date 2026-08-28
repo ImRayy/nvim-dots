@@ -2,7 +2,11 @@ return {
   -- Automatically add closing tags for HTML and JSX
   {
     "windwp/nvim-ts-autotag",
-    opts = {},
+    opts = {
+      options = {
+        enable_close_on_slash = true,
+      },
+    },
   },
 
   -- Indent blankline
