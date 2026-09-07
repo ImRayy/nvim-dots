@@ -8,6 +8,7 @@ return {
       input = {},
       picker = {
         prompt = " ",
+        ui_select = true,
       },
       debug = {},
       dim = {},

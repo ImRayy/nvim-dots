@@ -103,6 +103,7 @@ return {
   -- Better built-in LSP experience
   {
     "nvimdev/lspsaga.nvim",
+    enabled = false,
     event = "LspAttach",
     keys = {
       { "<a-.>", mode = { "n" }, ":Lspsaga ", desc = "Too lazy to type :Lspsaga manually" },
